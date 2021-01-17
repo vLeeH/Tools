@@ -7,4 +7,17 @@ The avaliable tools.
 - ✅ <a href="">Dowload</a> musics. 
 - 🎯 <a href="">Track</a> orders.
 
+## Description 
+
+### 🎵 Converter
+
+`pip install moviepy` `pip install numpy==1.19.3`
+
+### ✅ Download
+
+`Tkinter`
+
+### Track 
+
+`pip install pyrastreio`
 
