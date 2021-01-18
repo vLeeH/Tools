@@ -17,7 +17,7 @@ Converter mp4 to mp3 <br>
 
 ### ✅ Download
 Download videos from youtube. <br>
-- Using Tkinter and PyTube
+- Using Tkinter and Pytube
 
 ### 📧 Mail 
 A script to send a machine file and messages by email. <br>
