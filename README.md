@@ -23,9 +23,7 @@ Download videos from youtube. <br>
 A script to send a machine file and messages by email. <br>
 - Send Computer Informations and email
 - Send Ip's
-- Send login data
-- Send files
-- Send HTML messages 
+- Send HTML messages and files 
 
 ### 🎯 Track 
 Scripts to get the geographic machine location (pt). <br>
