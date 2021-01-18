@@ -15,14 +15,14 @@ The avaliable tools.
 `pip install moviepy` `pip install numpy==1.19.3`
 
 ### ✅ Download
-- Download videos from youtube using Tkinter <br>
+- Download videos from youtube using Tkinter. <br>
 `Tkinter`
 
 ### 📧 Mail 
-- Send HTML messages and images using smtplib <br>
+- Send HTML messages and images using smtplib. <br>
 `smtplib`
 
 ### 🎯 Track 
-- See the order using pyrastreio (pt) <br>
+- See the order using pyrastreio (pt). <br>
 `pip install pyrastreio`
 
