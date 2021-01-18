@@ -8,6 +8,11 @@ The avaliable tools.
 - 📧 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py">Mail</a> sender.
 - 🎯 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Track/track.py">Track</a> orders.
 
+## Compile
+<a href="https://pypi.org/project/pyinstaller/">pyinstaller</a>
+Using pyinstaller to compile and make the executable.
+> pip install pyinstaller 
+
 ## Description 
 
 ### 🎵 Converter
