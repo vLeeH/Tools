@@ -1,5 +1,5 @@
 <h1 align="center">ToolsPy</h1>
-My tools made in python.
+<p align="center">My tools made in python.</p>
 
 ## Tools
 The avaliable tools.
