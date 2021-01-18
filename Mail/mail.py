@@ -42,7 +42,7 @@ msg.add_alternative(f'''
 ''', subtype='html')
 
 # Files
-files= ['diretory/image.jpg']
+files= ['directory/image.jpg']
 for file in files: 
     try: 
         with open(file, 'rb') as f: 
