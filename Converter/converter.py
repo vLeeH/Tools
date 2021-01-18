@@ -1,4 +1,4 @@
-# github.com/vLeeH
+# github.com/vLeeH - 2021
 import os
 try:
     from moviepy.editor import *
