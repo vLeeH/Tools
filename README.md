@@ -21,7 +21,8 @@ Download videos from youtube. <br>
 
 ### 📧 Mail 
 A script to send a machine file by email. <br>
-- Send IPs and email
+- Send Computer Informations and email
+- Send Ip's
 - Send login data
 - Send files
 - Send HTML messages 
