@@ -60,4 +60,4 @@ try:
 except Exception as e: 
     print(f'[ERROR] {e}')
 
-# https://github.com/vLeeH/ToolsPy/blob/main/ToolsPy/mail.py
+# https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py
