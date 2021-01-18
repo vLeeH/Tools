@@ -10,24 +10,31 @@ The avaliable tools.
 
 ## Compile
 <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> - <a href="https://pyinstaller.readthedocs.io/en/v4.0/">documentation</a> <br>
-Using pyinstaller to compile and make the executable.
+Using <strong>pyinstaller</strong> to compile and make the executable.
 > pip install pyinstaller 
 
 ## Description 
 
 ### 🎵 Converter
-- Converter mp4 to mp3 using moviepy and numpy. <br>
+Converter mp4 to mp3 <br>
+- Using moviepy 
+- Using numpy 
 `pip install moviepy` `pip install numpy==1.19.3`
 
 ### ✅ Download
-- Download videos from youtube using Tkinter. <br>
+Download videos from youtube. <br>
+- Using Tkinter
 `Tkinter`
 
 ### 📧 Mail 
-- Send HTML messages and images using smtplib. <br>
+A script to send a machine file by email. <br>
+- Send IPs and email
+- Send login data
+- Send files
+- Send HTML messages 
 `smtplib`
 
 ### 🎯 Track 
-- See the order using pyrastreio (pt). <br>
+Scripts to get the geographic machine location (pt). <br>
 `pip install pyrastreio`
 
