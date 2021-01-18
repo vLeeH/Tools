@@ -20,7 +20,7 @@ Download videos from youtube. <br>
 - Using Tkinter
 
 ### 📧 Mail 
-A script to send a machine file by email. <br>
+A script to send a machine file and messages by email.. <br>
 - Send Computer Informations and email
 - Send Ip's
 - Send login data
