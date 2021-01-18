@@ -9,7 +9,7 @@ The avaliable tools.
 - 🎯 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Track/track.py">Track</a> orders.
 
 ## Compile
-<a href="https://pypi.org/project/pyinstaller/">pyinstaller</a>
+<a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> - <a href="https://pyinstaller.readthedocs.io/en/v4.0/">documentation</a> <br>
 Using pyinstaller to compile and make the executable.
 > pip install pyinstaller 
 
