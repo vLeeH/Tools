@@ -18,12 +18,12 @@ Using <strong>pyinstaller</strong> to compile and make the executable.
 ### 🎵 Converter
 Converter mp4 to mp3 <br>
 - Using moviepy 
-- Using numpy 
+- Using numpy <br>
 `pip install moviepy` `pip install numpy==1.19.3`
 
 ### ✅ Download
 Download videos from youtube. <br>
-- Using Tkinter
+- Using Tkinter<br>
 `Tkinter`
 
 ### 📧 Mail 
@@ -31,7 +31,7 @@ A script to send a machine file by email. <br>
 - Send IPs and email
 - Send login data
 - Send files
-- Send HTML messages 
+- Send HTML messages <br>
 `smtplib`
 
 ### 🎯 Track 
