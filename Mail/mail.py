@@ -4,19 +4,24 @@ from email.message import EmailMessage
 import imghdr  
 from time import sleep
 import getpass
+import socket
+import platform
 
 # github.com/vLeeH - 2021
 # Disable the less secure apps in your account.
 
 # Credentials
-send_email = "EMAIL_THAT_WILL_SEND"
-rec_email = "EMAIL_TO_RECEIVED"
+send_email = "EMAIL_THAT_SEND_EMAIL"
+rec_email = "EMAIL_RECEIVE"
 password = input(str('Enter your password: '))
 
-# Computer Info
+# Computer Informations
 username = getpass.getuser()
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
+inf="{}\n{}\n\n> System.inf\n{}\n{}\n{}\n\n> Raw:\n{}".format(hostname,IPAddr,platform.node(),platform.system(),platform.processor(),platform.uname())
 
-# Info
+# Informations
 subject = f'Check The Message {username}.'
 msg = EmailMessage()
 msg['subject'] = subject
@@ -25,17 +30,19 @@ msg['To'] = rec_email
 
 # HTML message :P
 msg.set_content('Image attached')
-msg.add_alternative('''
+msg.add_alternative(f'''
     <!DOCTYPE html>
     <html lang="en">
         <body>
-            <h1 style="color: gray;">Click in the image down below ↙</h1>
+            <h1 style="color: gray;">See the image and the Computer Informations ↙</h1>
+            <h2>The computer informations:</h2><br>
+            {inf}
         </body>
     </html>
 ''', subtype='html')
 
 # Files
-files= ['image.jpg']
+files= ['diretory/image.jpg']
 for file in files: 
     try: 
         with open(file, 'rb') as f: 
@@ -60,4 +67,4 @@ try:
 except Exception as e: 
     print(f'[ERROR] {e}')
 
-# https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py
+# https://github.com/vLeeH/ToolsPy/blob/main/ToolsPy/mail.py
