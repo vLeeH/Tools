@@ -11,14 +11,18 @@ The avaliable tools.
 ## Description 
 
 ### 🎵 Converter
-
+Converter mp4 to mp3 using moviepy and numpy.
 `pip install moviepy` `pip install numpy==1.19.3`
 
 ### ✅ Download
-
+Download videos from youtube using Tkinter
 `Tkinter`
 
-### 🎯 Track 
+### 📧 Mail 
+Send HTML messages and images using smtplib
+`smtplib`
 
+### 🎯 Track 
+See the order using pyrastreio (pt)
 `pip install pyrastreio`
 
