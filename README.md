@@ -12,19 +12,32 @@ The avaliable tools.
 
 ### 📧 Mail 
 **A script to send a machine file and messages by email.** <br>
-- Send Computer Informations and email
-- Send Ip's
-- Send HTML messages and files 
+1.Send Computer Informations and email <br>
+2.Send Ip's <br>
+3.Send HTML messages and files <br>
+<br>
+Using smtplib
+
 
 ### 🎵 Converter
 **Converter mp4 to mp3** <br>
-- Using moviepy 
-- Using numpy 
+1.Put the music diretory<br>
+<br>
+Using moviepy  <br>
+Using numpy 
 
-### ✅ Download
-**Download videos from youtube.** <br>
-- Using Tkinter and Pytube
 
 ### 🎯 Track 
 **Scripts to get the geographic machine location (pt-br).** <br>
-- Using pyrastreio 
+1.Track orders with the Id.<br>
+<br>
+Using pyrastreio.
+
+
+### ✅ Download
+**Download videos from youtube.** <br>
+1.Get the video's url  <br>
+2.Put the link in the interface<br>
+<br>
+Using Tkinter  <br>
+And pytube
