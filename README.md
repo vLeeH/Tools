@@ -1,5 +1,5 @@
-<h1>ToolsPy</h1>
-My tools made in python.
+<h1>Tools in Python</h1>
+My tools made in Python.
 
 ## Installation
 **Python** - `3.8`
