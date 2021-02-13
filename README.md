@@ -2,6 +2,7 @@
 My tools made in python.
 
 ## Installation
+**Python** - `3.8`
 ```
 git clone https://github.com/vLeeH/Tools.git
 ```
