@@ -1,6 +1,11 @@
 <h1>ToolsPy</h1>
 My tools made in python.
 
+## Installation
+```
+git clone https://github.com/vLeeH/Tools.git
+```
+
 ## Tools
 The avaliable tools.
 - 📧 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py">Mail</a> sender.
