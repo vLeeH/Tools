@@ -46,7 +46,7 @@ pip install pyrastreio.
 ## ✅ Download
 **Download videos from youtube.** <br>
 1.Get the video's url  <br>
-2.Put the link in the interface<br>
+2.Put the link in the tkinter interface<br>
 <br>
 ```
 pip install Tkinter
