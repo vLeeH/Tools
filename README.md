@@ -7,7 +7,7 @@ Some tools made in Python.
 git clone https://github.com/vLeeH/Tools.git
 ```
 
-## Tools
+## Avaliable tools
 The avaliable tools.
 - 📧 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py">Mail</a> sender.
 - 🎵 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Converter/converter.py">Converter</a> mp4 to mp3 
