@@ -19,7 +19,6 @@ The avaliable tools.
 1.Send Computer Informations and email <br>
 2.Send Ip's <br>
 3.Send HTML messages and files <br>
-<br>
 ```
 pip install smtplib
 ```
@@ -27,7 +26,6 @@ pip install smtplib
 ## 🎵 Converter
 **Converter mp4 to mp3** <br>
 1.Put the music diretory<br>
-<br>
 ```
 pip install moviepy
 ```
@@ -38,7 +36,6 @@ pip install numpy
 ## 🎯 Track 
 **Scripts to get the geographic machine location (pt-br).** <br>
 1.Track orders with the Id.<br>
-<br>
 ```
 pip install pyrastreio.
 ```
@@ -47,7 +44,6 @@ pip install pyrastreio.
 **Download videos from youtube.** <br>
 1.Get the video's url  <br>
 2.Put the link in the tkinter interface<br>
-<br>
 ```
 pip install Tkinter
 ```
