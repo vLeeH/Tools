@@ -8,7 +8,7 @@ import socket
 import platform
 
 # github.com/vLeeH - 2021
-# Disable the less secure apps in your account.
+# Disable the less secure apps in your google account.
 
 # Credentials
 send_email = "EMAIL_THAT_SEND_EMAIL"
