@@ -9,6 +9,7 @@ import platform
 
 # github.com/vLeeH - 2021
 # Disable the less secure apps in your google account.
+# https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4Nl5miO66WVTBv2vi77prfSYQcKKsQGJg-_XoEwSjYvhPwy7WCM0wCtj8ivvqFkEHGbmSR--nh9C393sN_wf4CcQhLgSw
 
 # Credentials
 send_email = "EMAIL_THAT_SEND_EMAIL"
