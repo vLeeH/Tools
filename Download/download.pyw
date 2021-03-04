@@ -5,6 +5,7 @@ from pytube import YouTube
 
 # Functions
 def download(): 
+    """The function to download the youtube video."""
     video_url = url.get()
     try: 
         youtube = pytube.YouTube(video_url)
