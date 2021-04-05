@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">web tools</h1>
+<h1>web tools</h1>
 Some tools made in Python.
 
 ## Installation
