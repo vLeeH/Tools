@@ -12,7 +12,6 @@ The avaliable Python tools
 - 📧 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Mail/mail.py">Mail</a> sender.
 - 🎵 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Converter/converter.py">Converter</a> mp4 to mp3 
 - 🎯 <a href="https://github.com/vLeeH/ToolsPy/blob/main/Track/track.py">Track</a> orders.
-- ~~✅ <a href="https://github.com/vLeeH/ToolsPy/blob/main/Download/download.pyw">Dowload</a> youtube.~~
 
 ## 📧 Mail 
 **A script to send a machine file and messages by email.** <br>
@@ -40,16 +39,5 @@ pip install numpy
 pip install pyrastreio.
 ```
 
-## ✅ Download
-**Download videos from youtube.** <br>
-1.Get the video's url  <br>
-2.Put the link in the tkinter interface<br>
-```
-pip install Tkinter
-```
-```
-pip install pytube
-```
-
 ### Author 
-→ <a href="https://github.com/vLeeH">Lee</a>
+Made by <a href="https://github.com/vLeeH">vLeeH</a>
