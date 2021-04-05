@@ -1,5 +1,5 @@
 <h1>web tools</h1>
-Some tools made in Python.
+Some simple tools made in Python libs.
 
 ## Installation
 **Python** - `3.8`
