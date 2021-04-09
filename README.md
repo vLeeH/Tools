@@ -7,7 +7,7 @@ A script to send a machine file and messages by email.
 3.Send HTML messages and files <br>
 
 ## Installation 
-_Python_ - `8`
+_Python_ - `3.8`
 ```
 git clone https://github.com/vLeeH/MailSender.git
 cd MailSender
