@@ -15,5 +15,5 @@ pip install smtplib
 python Mail/mail.py
 ```
 
-### Author 
+## Author 
 Made by <a href="https://github.com/vLeeH">vLeeH</a>
