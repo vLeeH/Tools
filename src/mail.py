@@ -12,7 +12,7 @@ from email.message import EmailMessage
 # Disable the less secure apps in your google account.
 
 def start():
-    os.system('cls' or 'clear') 
+    os.system('cls' if os.name == 'nt' else 'clear') 
     sleep(0.5)
     print("Mail Sender starting...")
     sleep(1)
