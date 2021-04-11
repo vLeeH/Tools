@@ -13,7 +13,6 @@ _Python_ - `3.8`
 ```
 git clone https://github.com/vLeeH/MailSender.git
 cd MailSender
-pip install smtplib
 python src/mail-bruteforce.py
 ```
 
