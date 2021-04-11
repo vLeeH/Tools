@@ -2,7 +2,7 @@
 Script for email bruteforce and that send HTML messages.
 
 ## Function
-#### Bruteforce 
+### Bruteforce 
 See the password of the email inputed.
 
 ### Email Sender
