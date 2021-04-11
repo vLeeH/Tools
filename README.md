@@ -6,9 +6,7 @@ Script for email bruteforce and that send HTML messages.
 See the password of the email inputed.
 
 ### Email Sender
-1.Send Computer Informations and email <br>
-2.Send IP's <br>
-3.Send HTML messages and files <br>
+Send Computer Informations, IP's, HTML messages and files
 
 ## Installation 
 _Python_ - `3.8`
