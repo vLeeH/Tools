@@ -1,7 +1,11 @@
-# Mail Sender
-A script to send a machine file and messages by email. 
+# Mail Bruteforce
+Script for email bruteforce and that send HTML messages.
 
 ## Function
+#### Bruteforce 
+See the password of the email inputed.
+
+### Email Sender
 1.Send Computer Informations and email <br>
 2.Send IP's <br>
 3.Send HTML messages and files <br>
@@ -18,7 +22,7 @@ python Mail/mail.py
 ## Errors
 Need to enter the email that will send and receive. 
 
-Disable the less secure apps in your google account to the tool works <a href="https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4OZAzbbij7nv1VXyUae3BG2cBJ_WU50hqusMsRTYKhTlJH1_KRKLb7rYKqP_2XnxBDJCPNgdGE1ruYKal_sY8_0AqizGg">click here.</a>
+Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4OZAzbbij7nv1VXyUae3BG2cBJ_WU50hqusMsRTYKhTlJH1_KRKLb7rYKqP_2XnxBDJCPNgdGE1ruYKal_sY8_0AqizGg">click here.</a>
 
 ## Author 
 Made by <a href="https://github.com/vLeeH">vLeeH</a>
