@@ -21,6 +21,8 @@ def banner():
      |  \/  |__ _(_) | | _ )_ _ _  _| |_ ___ / _|___ _ _ __ ___ 
      | |\/| / _` | | | | _ \ '_| || |  _/ -_)  _/ _ \ '_/ _/ -_)
      |_|  |_\__,_|_|_| |___/_|  \_,_|\__\___|_| \___/_| \__\___|
+     
+     Powered by vLeeH
     \033[0m'''
     print(mail_banner)
     sleep(1)
@@ -32,7 +34,7 @@ def MailPassword():
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
-        passwfile = open('src/wordlist.txt', 'r')
+        passwfile = open('src/wordlists/wordlist.txt', 'r')
         pass_list = passwfile.readlines()
         for password in pass_list:
             i += 1
