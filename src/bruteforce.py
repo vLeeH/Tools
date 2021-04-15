@@ -14,6 +14,7 @@ import sys
 # Disable the less secure apps in your google account.
 
 def banner():
+    # The banner of the email tools. 
     os.system('cls' if os.name == 'nt' else 'clear') 
     sleep(0.5)
     mail_banner ='''\033[31m
@@ -29,6 +30,7 @@ def banner():
 
 
 def MailPassword(): 
+    # Get the email password
     gmail = str(input("[*] Enter the email: "))
     i = 0
     try:
