@@ -24,8 +24,5 @@ Disable the less secure apps in your google account to the sender tool works <a 
 ## Examples 
 <img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
 
-## Examples 
-<img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
-
 ## Author 
 Made by <a href="https://github.com/vLeeH">vLeeH</a>
