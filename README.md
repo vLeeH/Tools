@@ -21,6 +21,8 @@ Need to enter the emails that will send and receive in `.env`
 
 Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here.</a>
 
+**Note:** The target must be connected to the same network or his email cannot have two-step verification.
+
 ## Examples 
 <img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
 
