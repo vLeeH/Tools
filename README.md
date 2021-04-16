@@ -1,4 +1,4 @@
-# Mail Bruteforce
+# Mail Brute Force
 ![python](https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg) ![license](https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg) <br>
 Script for email bruteforce and that send HTML messages.
 
