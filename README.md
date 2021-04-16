@@ -17,7 +17,7 @@ python src/mail-bruteforce.py
 ```
 
 ## Errors
-Need to enter the emails that will send and receive in `.env`
+Need to enter the emails that will send and receive in `.env` for the Sender Tool.
 
 Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here.</a>
 
