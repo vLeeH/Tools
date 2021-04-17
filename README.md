@@ -10,7 +10,9 @@
    <img align="center" src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> 
     
    <img align="center" src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
-</p> 
+</p>
+ 
+<img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
 
 ## What is this? 
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
@@ -32,6 +34,3 @@ python src/mail-bruteforce.py
 Need to enter the emails that will send and receive in `.env`
 
 Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here.</a>
-
-## Examples 
-<img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
