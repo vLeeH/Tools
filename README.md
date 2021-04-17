@@ -1,8 +1,8 @@
-<h1 style="text-align: center;">Mail Brute Force</h1>
+<h1 align="center">Mail Brute Force</h1>
+<p align="center">
+    <img align="center" src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> <img align="center" src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
+</p>
 
-<div style="text-align: center;">
-    <img src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> <img src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
-<div>
 Script for email bruteforce and that send HTML messages.
 
 ### Bruteforce
