@@ -1,5 +1,8 @@
-# Mail Brute Force
-![python](https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg) ![license](https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg) <br>
+<h1 style="text-align: center;">Mail Brute Force</h1>
+
+<div style="text-align: center;">
+    <img src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> <img src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
+<div>
 Script for email bruteforce and that send HTML messages.
 
 ### Bruteforce
@@ -17,11 +20,9 @@ python src/mail-bruteforce.py
 ```
 
 ## Errors
-Need to enter the emails that will send and receive in `.env` for the Sender Tool.
+Need to enter the emails that will send and receive in `.env`
 
 Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here.</a>
-
-**Note:** The target must be connected to the same internet or his email cannot have two-step verification.
 
 ## Examples 
 <img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
