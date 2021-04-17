@@ -7,21 +7,18 @@
 
    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vleeh/MailBrute-Py">
 
-   <img align="center" src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> 
+   <img alt="Language" src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue.svg"> 
     
-   <img align="center" src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
+   <img alt="License" src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
 </p>
- 
+
 <img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
 
 ## What is this? 
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
 
-#### Bruteforce
-> See the password of the email inputed.
-
-#### Email Sender
-> Send Computer Informations, IPs, HTML messages and files
+- [x] See the password of the email inputed.
+- [x] Send Computer Informations, IPs, HTML messages and files
 
 ## How to install 
 _Python_ - `3.8`
