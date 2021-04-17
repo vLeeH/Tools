@@ -12,7 +12,9 @@
    <img alt="License" src="https://img.shields.io/github/license/vLeeH/Mail-Bruteforce.svg">
 </p>
 
-<img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
+<p align="center">
+    <img src="https://github.com/vLeeH/MailBrute-Py/blob/main/.github/example.png">
+</p>
 
 ## What is this? 
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
