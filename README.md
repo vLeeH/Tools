@@ -20,7 +20,7 @@
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
 
 - [x] See the password of the email inputed.
-- [x] Send Computer Informations, IPs, HTML messages and files
+- [x] Send Computer Informations, IP, HTML messages and files
 
 ## How to install 
 _Python_ - `3.8`
