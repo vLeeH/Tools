@@ -1,4 +1,4 @@
-<h1 align="center">MailBrute-Py 📧</h1>
+<h1 align="center">Mail Brute Force</h1>
 
 <p align="center">
    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vleeh/MailBrute-Py">
@@ -20,14 +20,14 @@
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
 
 - [x] See the password of the email inputed.
-- [x] Send Computer Informations, IP, HTML messages and files
+- [x] Send Computer Informations, IPs, HTML messages and files
 
 ## How to install 
 _Python_ - `3.8`
 ```
 git clone https://github.com/vLeeH/MailSender.git
 cd MailBrute-Py
-python src/bruteforce.py
+python main.py
 ```
 
 ## Errors
@@ -37,4 +37,4 @@ Disable the less secure apps in your google account to the sender tool works <a 
 
 **Note:** You can change the wordlist and use your own.
 
-<h2 align="center">By vLeeH</h2>
+<h1 align="center">By vLeeH</h1>
