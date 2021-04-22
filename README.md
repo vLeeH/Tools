@@ -24,6 +24,7 @@
 
 ## Usage
 _Python_ - `3.8`
+
 Installation:
 ```
 git clone https://github.com/vLeeH/MailSender.git
