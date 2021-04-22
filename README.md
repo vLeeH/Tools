@@ -22,13 +22,19 @@
 - [x] See the password of the email inputed.
 - [x] Send Computer Informations, IPs, HTML messages and files
 
-## How to install 
+## Usage
 _Python_ - `3.8`
+Installation:
 ```
 git clone https://github.com/vLeeH/MailSender.git
+```
+Open and run the tool:
+```
 cd MailBrute-Py
 python main.py
 ```
+Then you just need to enter the email and your wordlist.
+
 
 ## Errors
 Need to enter the emails that will send and receive in `.env`
