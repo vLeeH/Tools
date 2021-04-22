@@ -34,7 +34,7 @@ Open and run the tool:
 cd MailBrute-Py
 python main.py
 ```
-Then you just need to enter the email, and if you wnat, your wordlist either.
+Then you just need to enter the email, and if you want, your wordlist either.
 
 
 ## Errors
