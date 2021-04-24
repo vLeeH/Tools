@@ -40,8 +40,8 @@ Then you just need to enter the email, and if you want, your wordlist either.
 ## Errors
 Need to enter the emails that will send and receive in `.env`
 
-Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here.</a>
+Disable the less secure apps in your google account to the sender tool works <a href="https://myaccount.google.com/lesssecureapps">click here</a>
 
-**Note:** You can change the wordlist and use your own.
+**Note:** You can change the wordlist and use your own
 
 <h1 align="center">By vLeeH</h1>
