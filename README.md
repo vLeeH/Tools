@@ -44,4 +44,4 @@ Disable the less secure apps in your google account to the sender tool works <a 
 
 **Note:** You can change the wordlist and use your own
 
-<h1 align="center">By vLeeH</h1>
+<h2 align="center">By vLeeH</h2>
