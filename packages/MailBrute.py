@@ -13,18 +13,24 @@ import sys
 # github.com/vLeeH - 2021
 # Disable the less secure apps in your google account to he Mail Sender.
 
+__author__='vLeeH'
+__version__='0.0.4'
+
+clear_func = lambda:os.system('cls' if os.name == 'nt' else 'clear')
 
 def __start__():
     '''The banner of the email tools.'''
-    os.system('cls' if os.name == 'nt' else 'clear') 
+    clear_func() 
     sleep(0.5)
-    mail_banner ='''\033[31m
+    mail_banner =f'''\033[31m
       __  __      _ _   ___          _        ____                 
      |  \/  |__ _(_) | | _ )_ _ _  _| |_ ___  | __|__ _ _ __ ___ 
      | |\/| / _` | | | | _ \ '_| || |  _/ -_) | _/ _ \ '_/ _/ -_)
      |_|  |_\__,_|_|_| |___/_|  \_,_|\__\___| |_|\___/_| \__\___|
-     
-     Powered by vLeeH
+    
+     Github: https://github.com/vleeh/MailBrute-Py
+     By: {__author__}
+     Version: {__version__}
     \033[0m'''
     print(mail_banner)
     sleep(1)
@@ -78,8 +84,6 @@ def __MailBrute__():
 
 def __MailBomb__(send_email, rec_email, password): 
     '''Send emails with computer informations, html messages and files'''
-
-    # Computer Informations
     username = getpass.getuser()
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
@@ -93,7 +97,7 @@ def __MailBomb__(send_email, rec_email, password):
     )
 
     # Informations
-    subject = f'Check The Message {username}.'
+    subject = f'MAIL BOMB 🤡🤡!!'
     msg = EmailMessage()
     msg['subject'] = subject
     msg['From'] = send_email
@@ -105,15 +109,15 @@ def __MailBomb__(send_email, rec_email, password):
         <!DOCTYPE html>
         <html lang="en">
             <body>
-                <h1 style="color: gray;">See the image and the Computer Informations ↙</h1>
-                <h2>The computer informations:</h2><br>
+                <h1 style="color: SlateGray;">MAIL BOMB ATTACK 🤡🤡</h1>
+                <h2>Computer informations</h2><br>
                 {}
             </body>
         </html>
     '''.format(inf), subtype='html')
 
     # Send Files and Images
-    files= ['.github/example.png']
+    files= ['demo/Clown.png']
     for file in files: 
         try: 
             with open(file, 'rb') as f: 
@@ -121,7 +125,7 @@ def __MailBomb__(send_email, rec_email, password):
                 file_type=imghdr.what(f.name)
                 file_name=f.name
 
-            msg.add_attachment(file_data, maintype = 'image', subtype=file_type, filename=file_name)
+            msg.add_attachment(file_data, maintype='image', subtype=file_type, filename=file_name)
 
         except Exception as e: 
             print()
@@ -133,7 +137,7 @@ def __MailBomb__(send_email, rec_email, password):
             smtp.login(send_email, password)
             print(f'[+] Login in the email {send_email}')
             sleep(1)
-            for m in range(0, 2): 
+            for m in range(0, 5): 
                 smtp.send_message(msg)
             print('\033[1;32m [+] Email has been sent to {}\033[0m'.format(rec_email))
 
@@ -159,12 +163,10 @@ def main():
                 print()
                 print('[+] Starting the Sender tool...')
                 sleep(2)
-
                 # Credentials
                 # Enter the emails that will send and receive here, and in the .env file.
-
-                send_email = os.getenv('SEND_MAIL')
-                rec_email = os.getenv('REC_EMAIL')
+                send_email = 'example@gmail.com'
+                rec_email = 'example@gmail.com'
                 password = getpass.getpass('[*] Enter your password: ')
                 __MailBomb__(send_email, rec_email, password)
             else: 
@@ -172,7 +174,9 @@ def main():
                 print('[!] Invalid answer.')
 
         elif ask1 == 'n': 
+            sleep(2)
             print()
+            print(f'By: {__author__}')
             print('[+] Thanks for using this tool! ')
             break
         

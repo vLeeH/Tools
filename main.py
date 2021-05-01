@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 try: 
     import os 
     import imghdr  
@@ -11,4 +13,4 @@ try:
 except ImportError: 
     pass 
 else: 
-    os.system('python packages/bruteforce.py')
+    os.system('python packages/MailBrute.py')
