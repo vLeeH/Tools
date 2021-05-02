@@ -14,7 +14,7 @@ import sys
 # Disable the less secure apps in your google account to he Mail Sender.
 
 __author__='vLeeH'
-__version__='0.0.4'
+__version__='0.0.5'
 
 clear_func = lambda:os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -109,7 +109,7 @@ def __MailBomb__(send_email, rec_email, password):
         <!DOCTYPE html>
         <html lang="en">
             <body>
-                <h1 style="color: SlateGray;">MAIL BOMB ATTACK 🤡🤡</h1>
+                <h1 style="color: SlateGrey;">MAIL BOMB ATTACK 🤡🤡</h1>
                 <h2>Computer informations</h2><br>
                 {}
             </body>
