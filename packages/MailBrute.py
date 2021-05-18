@@ -164,7 +164,7 @@ def main():
                 print('[+] Starting the Sender tool...')
                 sleep(2)
                 # Credentials
-                # Enter the emails that will send and receive here, and in the .env file.
+                # Enter the emails that will send and receive here.
                 send_email = 'example@gmail.com'
                 rec_email = 'example@gmail.com'
                 password = getpass.getpass('[*] Enter your password: ')
