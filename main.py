@@ -10,7 +10,7 @@ try:
     import smtplib
     from email.message import EmailMessage
     import sys
-except ImportError: 
-    pass 
+except ImportError as i: 
+    print(f"{i}") 
 else: 
     os.system('python packages/MailBrute.py')
