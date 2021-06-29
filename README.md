@@ -17,6 +17,8 @@
 </p>
 
 ## What is this? 
+_For educational purposes._
+
 <strong>MailBrute-Py</strong> script for email bruteforce and that send HTML messages.
 
 - [x] See the password of the email inputed.
