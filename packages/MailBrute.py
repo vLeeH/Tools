@@ -1,25 +1,24 @@
 # -*- coding: utf-8 -*-
 
-import os 
-import imghdr  
+import smtplib, os, imghdr, getpass, socket, platform, sys
 from time import sleep
-import getpass
-import socket
-import platform
-import smtplib
 from email.message import EmailMessage
-import sys
 
+##########################
 # github.com/vLeeH - 2021
 # Disable the less secure apps in your google account to he Mail Sender.
+##########################
 
 __author__='vLeeH'
-__version__='0.0.5'
+__version__='0.0.6'
 
-clear_func = lambda:os.system('cls' if os.name == 'nt' else 'clear')
+clear_func = lambda: os.system('cls' if os.name == 'nt' else 'clear')
 
 def __start__():
-    '''The banner of the email tools.'''
+    '''
+    [- Mail Brute Py -] 
+    The banner of the email tools.
+    '''
     clear_func() 
     sleep(0.5)
     mail_banner =f'''\033[31m
@@ -83,7 +82,9 @@ def __MailBrute__():
 
 
 def __MailBomb__(send_email, rec_email, password): 
-    '''Send emails with computer informations, html messages and files'''
+    '''
+    Send emails with computer informations, html messages and files.
+    '''
     username = getpass.getuser()
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
@@ -159,19 +160,22 @@ def main():
                 input('[*] Bruteforce/Send? ')).lower().strip()
             if ask == 'bruteforce':
                 __MailBrute__()
+                
             elif ask == 'send':
                 print()
                 print('[+] Starting the Sender tool...')
                 sleep(2)
+                
                 # Credentials
                 # Enter the emails that will send and receive here.
                 send_email = 'example@gmail.com'
                 rec_email = 'example@gmail.com'
                 password = getpass.getpass('[*] Enter your password: ')
+                
                 __MailBomb__(send_email, rec_email, password)
+                
             else: 
-                print()
-                print('[!] Invalid answer.')
+                print('\r\n[!] Invalid answer.')
 
         elif ask1 == 'n': 
             sleep(2)
@@ -181,8 +185,7 @@ def main():
             break
         
         else: 
-            print()
-            print('[!] Invalid answer.')
+            print('\r\n[!] Invalid answer.')
 
 
 if __name__=='__main__': 
